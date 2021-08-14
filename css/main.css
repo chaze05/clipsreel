@@ -1,0 +1,790 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+   background: #262626;
+}
+.wd100{
+   width: 100%;
+}
+
+.longContainer{
+   position: relative;
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+.flexBox{
+   display: flex;
+}
+.flexRow{
+   flex-direction:row;
+}
+.flexCol{
+   flex-direction:column;
+}
+
+/* navigation */
+.navbar{
+   background: #000000;
+   padding: 12px 0;
+}
+.navbarHolder{
+   display: flex;
+   justify-content: space-between;
+}
+.navbar .container{
+   max-width: 1740px;
+}
+.logoHolder{
+   flex-grow: 8;
+}
+.menuHolder ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menuHolder ul li{
+   display: inline-block;
+   vertical-align: middle;
+}
+.menuHolder ul li a{
+   display: block;
+
+   font-size: 16px;
+   color: white;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif; 
+   font-weight: 300;
+   position: relative;
+   transition: all .1s ease-in-out;
+}
+.menuHolder ul li:not(:last-child) a{
+   padding: 12px 20px;
+}
+.menuHolder ul li a:hover{
+   color: #00ffd0;
+}
+.menuHolder ul li:not(:last-child) a:before{
+   position: absolute;
+   content: '';
+   width: 30%;
+   background: white;
+   height: 2px;
+   left: 0;
+   right: 0;
+   margin:auto;
+   opacity: 0;
+   bottom: -10px;
+   transition: all .35s ease-in-out;
+}
+.menuHolder ul li a:hover:before{
+   bottom: 0;
+   opacity: 1;
+}
+
+/* SCRIPT */
+.scriptHolder{
+   padding-top:149px;
+   margin-bottom: 150px;
+}
+.scriptHolder .container{
+   padding: 0 5%;
+}
+
+.scriptHolder  .scriptTitle{
+   font-size: 16px;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.scriptHolder .titleBox input{
+   padding: 30px;
+   color: #949494;
+   background: #000000;
+   outline: none;
+   border-radius: 15px;
+   margin-bottom: 30px;
+   border: 0;
+   font-size: 14px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+}
+
+.scriptHolder .messagBox textarea{
+   padding: 30px;
+   color: white;
+   background: #0C0C0C;
+   outline: none;
+   border-radius: 15px;
+   border: 0;
+   font-size: 14px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+}
+
+.scriptHolder .submitBox .btnSubmit{
+   display: block;
+   text-align: center;
+   margin-right: 0;
+   margin-left: auto;
+   margin-top:40px;
+   width: 168px;
+   padding: 15px 0;
+   line-height: 1;
+   border-radius: 5px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   outline: none;
+   color: white;
+   background-image: linear-gradient( to right ,#0DE6BE,#359CC9);
+   text-decoration: none;
+   transition: background-image .5s ease-in-out;
+}
+.scriptHolder .submitBox .btnSubmit:hover{
+   background-image: linear-gradient( to right ,#359CC9,#0DE6BE);
+   font-weight: 700;
+}
+.scriptHolder .submitBox .btnSubmit img{
+   margin-right: 10px;
+}
+
+/* STORY */
+.mainContent{
+   padding-top: 82px;
+   padding-bottom: 137px;
+}
+.leftBox{
+  flex: 0 0 35%;
+  padding-right: 4%;
+}
+.rightBox{
+   flex: 1;
+   background: #333333;
+}
+
+.leftBox .descHolder{
+   border: 1px solid #707070;
+   border-bottom: 0;
+   border-top: 0;
+}
+.leftBox .descBox{
+   margin-top: 20px;
+   width: 100%;
+   margin-bottom: 20px;
+   outline: none;
+   width: 100%;
+   border-radius: 10px;
+   color: white;
+   background: #242424;
+   padding :20px;
+}
+
+.leftBox .descBox.active{
+   background:#2DA882 ;
+}
+
+/* infobar */
+.rightBox .infobar{
+   background: #000000;
+   justify-content: flex-end;
+   align-items: center;
+   padding:19px 0;
+}
+.rightBox .infobar .name{
+   width: 35%;
+   margin-right: 30px;
+}
+.rightBox .infobar .name input{
+   border-radius: 50px;
+   background: #161616;
+   font-size: 14px;
+   font-family: 'Poppins', sans-serif;
+   font-weight:400;
+   outline: none;
+   border: 0;
+   color: #A5A5A5;
+   border: 1px solid #707070;
+   width: 100%;
+   height: 42px;
+   text-align: left;
+   padding-left: 30px;
+}
+.rightBox .infobar .buttons a{
+   display: inline-block;
+   width: 163px;
+   text-align: center;
+   text-align: center;
+   padding :12px 0;
+   font-size: 14px;
+   font-weight: 500;
+   text-decoration: none;
+   color: white;
+   border-radius: 5px;
+   text-transform: capitalize;
+
+}
+.rightBox .infobar .buttons .save{
+   background-image: linear-gradient( to right ,#0DE6BE,#359CC9);
+   margin-right:20px;
+}
+.rightBox .infobar .buttons .render{
+   background-image: linear-gradient( to right ,#AD2FD0,#C53884);
+}
+.rightBox .infobar .buttons a img{
+   margin-right: 8px;
+}
+
+/* settings */
+.rightBox .settingsBox{
+   background: #232323;
+   padding: 11px 0;
+}
+.rightBox .settingsBox ul{
+   list-style: none;
+   margin:0;
+   padding: 0;
+   text-align: center;
+}
+.rightBox .settingsBox ul li{
+   display: inline-block;
+}
+.rightBox .settingsBox ul li a{
+   font-size: 14px;
+   font-weight: 500;
+   color: white;
+   display: block;
+   padding:30px;
+   text-decoration:none;
+   text-transform: capitalize;
+   text-align: center;
+   transition:color .25s ease-in-out;
+}
+.rightBox .settingsBox ul li a img{
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 15px;;
+   transition:display .25s ease-in-out;
+}
+.rightBox .settingsBox ul li a img.active{
+   display: none;
+}
+.rightBox .settingsBox ul li a.active,.rightBox .settingsBox ul li a:hover {
+   color: #00FFB1;
+}
+.rightBox .settingsBox ul li a.active img.plain,.rightBox .settingsBox ul li a:hover img.plain{
+   display: none;
+}
+.rightBox .settingsBox ul li a.active  img.active,.rightBox .settingsBox ul li a:hover img.active{
+   display: block;
+}
+
+/* video player */
+.videoHolder{
+   padding:0 15px;
+}
+.videoHolder .videoBox{
+   width: 100%;
+   max-width: 70%;
+   margin: 0 auto;
+   position: relative;
+}
+/* .videoHolder .videoBox video{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top:0;
+   left: 0;
+} */
+.videoHolder .videoBox .player img{
+   position: relative;
+   width: 100%;
+   top: 0;
+   left: 0;
+}
+
+.rightBox .controlBox{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   max-width: 95%;
+   background: #000000;
+   padding: 20px 0;
+   border-radius: 10px;
+   margin:0 auto;
+   position: relative;
+   top:-40px;
+}
+.rightBox .controlBox .box{
+   flex:1;
+}
+.rightBox .controlBox .timeBox{
+   padding-left: 30px;
+}
+.rightBox .controlBox .timeBox span{
+   color: #FFFFFF;
+   font-size: 14px;
+   font-family: 'Poppins', sans-serif;
+   font-weight:400;
+}
+.rightBox .controlBox .buttonsBox{
+   display: flex;
+   justify-content: space-evenly;
+   cursor: pointer;
+}
+.rightBox .controlBox .expand{
+   text-align:right;
+   padding-right: 30px;
+}
+
+
+
+
+
+/* MEDIA */
+.leftBox .descHolder{
+   display: none;
+}
+.leftBox .descHolder.active{
+   display: block;
+}
+
+.leftBox .descHolder .catDetails{
+   display: none;
+}
+.leftBox .descHolder .catDetails.active{
+   display: block;
+}
+.leftBox #media .categoryBox a, .leftBox #audio .categoryBox a{
+   flex: 1;
+   text-align: center;
+   padding: 10px 0;
+   color: white;
+   text-decoration: none;
+   font-size: 14px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;;
+   text-transform: capitalize;
+}
+.leftBox #media .categoryBox a.active, .leftBox #audio .categoryBox a.active{
+   background: #00C587;
+}
+.leftBox #media .categoryBox a.rLeft,.leftBox #audio .categoryBox a.rLeft{
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+.leftBox #media .categoryBox a.rRight,.leftBox #audio .categoryBox a.rRight{
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+.leftBox #media .searchBox input,.leftBox #audio .searchBox input{
+   outline: none;
+   width: 100%;
+   height: 50px;
+   margin: 20px 0;
+   padding-left: 30px;
+}
+.leftBox #media .imageList, .leftBox #audio .imageList, .leftBox .templateList .imageList{
+   justify-content: space-between;
+   flex-wrap: wrap;
+} 
+.leftBox #media .imageList a,.leftBox #audio .imageList a,.leftBox .templateList a{
+   display: block;
+   flex: 0 0 49%;
+   margin-bottom: 15px;
+}
+.leftBox #media .imageList a img,.leftBox #audio .imageList a img, .leftBox .templateList a img{
+   width: 100%;
+}
+#media.mediaBox .btnUpload{
+   margin-bottom: 30px;
+}
+
+/* AUDIO */
+
+.leftBox #audio .imageList{
+   margin-top: 20px;
+   padding-top: 20px;
+}
+.leftBox #audio #music .imageList{
+   border-top: 1px solid #707070;
+}
+.leftBox #audio .imageList a{
+   display: block;
+   flex: 0 0 31%;
+   margin-bottom: 15px;
+}
+
+/* TTS */
+#tts{
+   border-top: 1px solid #707070;
+   margin-top: 30px;
+   padding-top: 30px;;
+}
+.ttsDetais{
+   background: #303030;
+   padding: 15px 10px;
+   border-radius: 10px;
+}
+.ttsDetais .settingsBox{
+   display: flex;
+   justify-content: space-between;
+}
+.ttsDetais div{
+   flex:0 0 30%;
+   position: relative;
+}
+.ttsDetais span{
+   display: block;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+   font-size: 11px;
+   font-weight: 400;
+   text-transform: uppercase;
+   color:#7D7D7D;
+}
+.ttsDetais .selected{
+   display: block;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   border: 1px solid rgb(165, 162, 162);
+   text-align:left;
+   border-radius: 5px;
+   padding: 10px 5px 10px 10px;
+   display: block;
+   text-transform: capitalize;
+   cursor: pointer;
+   z-index: 150;
+   background-image: url('../img/down.png');
+   background-position: center right 10px;
+   background-repeat: no-repeat;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+
+}
+.ttsDetais .settingsBox ul{
+   display: none;
+   position: absolute;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   border: 1px solid #707070;
+   width: 100%;
+   border-top: 0;
+   background: #303030;
+   z-index: 100;
+}
+.ttsDetais .settingsBox ul li{
+   display: block;
+   padding: 10px 0 10px 5px;
+   color:white;
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+}
+.ttsDetais .settingsBox ul li:hover{
+   background: white;
+   color:#303030;
+   cursor: pointer;
+}
+
+.ttsDetais .textBox {
+   margin-top: 20px;
+}
+.ttsDetais .textBox textarea{
+   background: #0C0C0C;
+   color: #787878;
+   border-radius: 10px;
+   width: 100%;
+   border: 1px solid #707070;
+   outline: none;
+   padding: 15px;
+   height: 172px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+}
+.ttsDetais .submitBox{
+   margin-top: 20px;
+   justify-content: space-between;
+}
+.ttsDetais .submitBox a{
+   flex: 0 0 48%;
+   display: block;
+   text-decoration: none;
+   text-align:center;
+   padding: 12px 0;
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   text-transform: capitalize;
+   font-weight: 500;
+   border-radius: 10px;
+}
+.ttsDetais .submitBox a img{
+   margin-right: 10px;
+}
+.ttsDetais .submitBox .btnPrev{
+   background-image: linear-gradient(to right,#52C0FF,#A382FF);
+}
+.ttsDetais .submitBox .btnSave{
+   background-image: linear-gradient(to right,#09EEBD,#3995CA);
+}
+
+/* CREDITS */
+#credits .heading{
+   display: block;
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   color: #ffffff ;
+   text-transform: capitalize;
+   margin: 15px 0;
+}
+#credits textarea{
+   background: #0C0C0C;
+   color: #787878;
+   border-radius: 10px;
+   width: 100%;
+   border: 1px solid #707070;
+   outline: none;
+   padding: 15px;
+   height: 140px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+}
+#credits .uploadBox, #style .uploadBox{
+   margin-top: 20px;
+   background: #303030;
+   padding: 10px 15px;
+   border-radius: 10px;
+   margin-bottom: 30px;
+}
+#credits .uploadBox .btnOutro ,#style .uploadBox .btnOutro{
+   display: block;
+   border-radius: 5px;
+   text-align: center;
+   color: #8F8F8F;
+   text-transform: capitalize;
+   padding: 20px 0;
+   color: #8F8F8F;
+   border: 1px solid #707070;
+   background: #171717;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   text-decoration: none;
+}
+#credits .uploadBox .flexBox,#style .uploadBox .flexBox{
+   align-items: center;
+   justify-content: space-between;
+}
+#credits .uploadBox .flexBox span ,#style .uploadBox .flexBox span {
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   text-transform: capitalize;
+   font-weight: 500;
+   color:#6E6E6E ;
+   flex: 1;
+}
+#credits .slideBtn,#style .slideBtn{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+#credits .slideBtn span,#style .slideBtn span{
+   margin-right: 10px;
+}
+#credits .slideHolder,#style .slideHolder{
+   position: relative;
+   width: 59px;
+   height: 37px;
+   background: #636363;
+   border-radius: 30px;
+   position: relative;
+}
+#credits .slideHolder .slider,#style .slideHolder .slider{
+   position: absolute;
+   content: '';
+   width: 26px;
+   height: 26px;
+   border-radius: 50%;
+   top: 3px;
+   background: #EBEBEB;
+   left: 5px;
+   bottom: 3px;
+   margin: auto;
+   -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -ms-transition: all .5s ease-in-out;
+   -o-transition: all .5s ease-in-out;
+   transition: all .5s ease-in-out;
+}
+
+#credits .slideHolder.active,#style .slideHolder.active{
+   background: #C23636;
+}
+#credits .slideHolder.active .slider,#style .slideHolder.active .slider{
+   left:calc(100% - 31px);
+}
+
+#credits .templateBox,#style .templateBox{
+   padding: 10px;
+   background:#303030;
+}
+
+/* Style */
+#style .logoBox, #style .watermarkBox{
+   justify-content: space-between;
+}
+#style .uploadBox{
+   flex-basis: 65%;
+}
+#style .positionBox {
+   margin-top: 20px;
+   padding: 10px 20px;
+   flex-basis: 31%;
+   background:#303030;
+   margin-bottom: 30px;
+   border-radius: 10px;
+}
+#style .positionBox .heading{
+   display: block;
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   text-transform: capitalize;
+   font-weight: 500;
+   color: white;
+   margin-bottom: 10px;
+}
+#style .positionBox .position{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+#style .positionBox .position .pos{
+   flex: 0 1 calc(100%/3 - 5%);
+   height: 29px;
+   background: #636363;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+#style .positionBox .position .pos.active{
+   background:#00BF85;
+}
+#style .logoBox .outroLogo{
+   border-radius: 50%;
+   border:1px solid #5E5E5E;
+   overflow:hidden;
+}
+#style .outroLogo img{
+   width: 60px;
+   height: 60px;
+}
+#style .uploadBox .slideBtn span{
+   font-size: 12px !important;
+}
+#style .dimmerBox{
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 0;
+   background: #303030;
+   align-items: center;
+   padding:20px 15px;
+   margin-bottom: 30px;
+   border-radius: 10px;
+}
+#style .dimmerBox .dimmer{
+   display: block;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   color: white;
+   text-transform: capitalize;
+}
+
+#style .dimmerBox .slideHolder.active{
+   background: #00BF85;
+}
+#style .dimmerBox .dimmer{
+   flex: 1;
+}
+
+
+
+
+.btnUpload{
+   display: block;
+   border-radius: 10px;
+   font-size: 14px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   color: white;
+   background-image: linear-gradient(to right,#51C1FF,#A97DFF);
+   text-align: center;
+   padding: 12px 0;
+   margin-top: 25px;
+   text-decoration: none;
+}
+
+#style .templateBox .heading{
+   display: block;
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   color: #ffffff ;
+   padding-left: 5px;
+   text-transform: capitalize;
+   margin: 15px 0;
+}
+
+
+.btnUpload:hover{
+   text-decoration: none;
+   color: white;
+}
+
+.btnUpload img{
+   margin-right: 10px;
+}
+
+.footerFix{
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   left: 0;
+   background:#000000 ;
+}
+.footerFix .timeLineBox{
+   padding: 20px 0;
+   justify-content: flex-start;
+   position: relative;
+}
+.footerFix .mediaBox{
+   width: 202px;
+   height: 95px;
+   margin-right: 35px;
+   text-align: center;
+   border-radius: 10px;
+   background: #101010;
+   border: 1px solid #434343;
+   color: #9A9A9A;
+   padding: 25px 50px;
+}
+.footerFix .btnPlus{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   margin: auto;
+   display: flex;
+   flex: 0;
+   justify-content: center;
+   flex-direction: column;
+   background: black;
+}
